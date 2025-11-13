@@ -1,0 +1,22 @@
+# macOS cruft
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# Aider cache/state
+aider/state/
+.aider*
+
+# Ollama runtime (volumineux ou sensibles)
+ollama/models/
+ollama/history
+ollama/logs/
+ollama/id_ed25519*
+
+# MCP logs & temp
+mcp/logs/
+
+# Misc
+tmp/

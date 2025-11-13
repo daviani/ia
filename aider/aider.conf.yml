@@ -1,0 +1,42 @@
+# Configuration Aider optimisée pour le dev local avec Qwen3-Coder:30B
+model: ollama_chat/qwen3-coder:30b
+
+# Gestion Git : Aider ne commit que si vous le demandez
+git: true
+auto-commits: false
+dirty-commits: false
+commit-prompt: |
+  Résume les changements en 1 ligne au format conventional commit (ex: feat: ajoute API).
+
+# UX / Terminal
+pretty: true
+stream: true
+dark-mode: false          # laissez Aider utiliser vos couleurs personnalisées
+fancy-input: true
+watch-files: true         # recharge les fichiers si vous les touchez dans l'éditeur
+show-diffs: true
+map-tokens: 2048
+map-refresh: auto
+
+# Suggestions & automation
+suggest-shell-commands: true
+lint: false               # Activez `aider --lint` ponctuellement si besoin
+auto-test: false          # Évitez d'exécuter les tests en boucle par défaut
+
+# Langue par défaut
+chat-language: fr
+
+# Thème Nord complet
+code-theme: nord
+user-input-color: "#88C0D0"
+tool-output-color: "#D8DEE9"
+tool-error-color: "#BF616A"
+tool-warning-color: "#EBCB8B"
+assistant-output-color: "#81A1C1"
+completion-menu-color: "#D8DEE9"
+completion-menu-bg-color: "#2E3440"
+completion-menu-current-color: "#2E3440"
+completion-menu-current-bg-color: "#88C0D0"
+
+# Télémétrie
+analytics: false
